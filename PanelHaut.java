@@ -1,6 +1,8 @@
+import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 
 public class PanelHaut extends JPanel
 {
@@ -12,20 +14,28 @@ public class PanelHaut extends JPanel
 
 	public PanelHaut()
 	{
+		JPanel panelPrinc = new JPanel(new BorderLayout());
 		JPanel panelBtn = new JPanel();
-		this.img = new ImageIcon();
+		JPanel panelHaut = new JPanel();
+		JPanel panelCentre = new JPanel();
+
+		this.img = new ImageIcon("hello-world.jpg");
 		this.lblDescription = new JLabel("Test de la Description");
 		this.lblImg = new JLabel(this.img);
 		this.btnLike = new JButton("Like");
 		this.btnSwipe = new JButton("Swipe");
 
-		this.add(this.lblDescription);
-		this.add(this.lblImg);
+		panelHaut.add(this.lblImg);
+		panelPrinc.add(panelHaut, BorderLayout.NORTH);
+
+		panelCentre.add(this.lblDescription);
+		panelPrinc.add(panelCentre, BorderLayout.CENTER);
 
 		panelBtn.add(this.btnLike);
 		panelBtn.add(this.btnSwipe);
+		panelPrinc.add(panelBtn, BorderLayout.SOUTH);
 
-		this.add(panelBtn, new FlowLayout(FlowLayout.LEFT) );
+		this.add(panelPrinc);
 		
 		this.setVisible(true);
 	}

@@ -7,9 +7,9 @@ public class Interface extends JFrame
 
 	public Interface()
 	{
-		this.setTitle("Zinder");
-		this.setSize(300, 900);
-		this.setLayout(new BorderLayout());
+		this.setTitle("Zinner");
+		this.setSize(500, 900);
+		//this.setLayout(new BorderLayout());
 
 		this.panelHaut = new PanelHaut();
 		
