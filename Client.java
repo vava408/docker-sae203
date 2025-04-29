@@ -10,8 +10,8 @@ public class Client {
 	private Controleur controleur;
 	private String idUtilisateurConnecte;
 	
-	private static final String SERVER_ADDRESS = "localhost";
-	private static final int SERVER_PORT = 5000;
+	private static final String SERVER_ADDRESS = "di-docker";
+	private static final int SERVER_PORT = 9043;
 	
 	public Client() 
 	{
