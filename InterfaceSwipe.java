@@ -44,7 +44,7 @@ public class InterfaceSwipe extends JFrame
 		logoLabel.setPreferredSize(new Dimension(40, 40));
 		logoLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		JLabel appNameLabel = new JLabel("ZINDER");
+		JLabel appNameLabel = new JLabel("INDER");
 		appNameLabel.setFont(new Font("Arial", Font.BOLD, 24));
 		
 		chatButton = new JButton("Chat");
