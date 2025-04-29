@@ -32,7 +32,7 @@ Zinder est une application de rencontre interactive qui permet aux utilisateurs 
 ## Structure du Projet
 
 ```plaintext
-Zinner/
+Zinder/
 ├──                # Interface de chat pour discuter avec les matchs
 ├──              # Gestion de la connexion client au serveur
 ├──       # Gestion des interactions serveur-client
@@ -46,31 +46,53 @@ Zinner/
 └──                # Documentation du projet
 ````
 
+---
+# Explication
+Commencez par vous connecter à Docker avec :  
+``` ssh identifiant@di-docker ```
 
-Commencer par cloner ce référentiel dans docker: 
-``` git clone https://github.com/vava408/docker-sae203.git```
+( cette commande stipule que vous êtes connecté au réseau de l'IUT )
+
+Puis cloner ce référentiel dans docker: 
+``` git clone https://github.com/vava408/docker-sae203.git ```
 
 Puis crée une image une images du DockerFile : 
-````docker build -t zinder .````
+```docker build -t zinder 
+```
 
 Puis lancer le docker avec la commande : 
 ```docker run --name zinder-server -d -p 9043:9043 zinder```
 
-Ensuite assuez vous que le containeur est bien en fonctionnement avec la commande 
-```docker ps```
+docker run permet de lancer le docker avec l'image que l'on creer précédemment, puis --name, 
+permet l'initialisation d'un nom pour notre docker.
+```-d``` permet l'éécution en arrière plan, puis ```-p``` permet de choisir le port
+( dans notre cas, le port 9043 ) 
 
-le résultat attendue est : 
-```002b46c927d3   zinder                "java Server"            57 minutes ago       Up 57 minutes       80/tcp, 0.0.0.0:9043->9043/tcp                   zinder-server````
+Ensuite, assurez-vous que le conteneur est bien en fonctionnement avec la commande :  
+```
+docker ps
+```
 
-Et pour finir lancer le client sur votre machine avec : 
-```javac *.java```
-puis :
-```java client```
+Le résultat attendu est :  
+```plaintext
+002b46c927d3   zinder                "java Server"            57 minutes ago       Up 57 minutes       80/tcp, 0.0.0.0:9043->9043/tcp                   zinder-server
+```
 
+Pour finir, lancez le client sur votre machine avec les commandes suivantes :  
+```
+javac *.java
+```
+puis :  
+```
+java client
+```
 
-Finalement, arrêtez le conteneur avec la commande suivante (les dernières chiffres sont le code de hachage affiché par docker ps):
-```docker stop b8f8f406b03c```
+Enfin, arrêtez le conteneur avec la commande suivante (remplacez `b8f8f406b03c` par l'ID affiché par `docker ps`) :  
+```
+docker stop b8f8f406b03c
+```
 
-Encore, si on souhaite supprimer le conteneur, on peut taper :
-
-```docker rm b8f8f406b03c```
+Si vous souhaitez supprimer le conteneur, utilisez la commande suivante :  
+```
+docker rm b8f8f406b03c
+```
