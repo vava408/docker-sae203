@@ -57,8 +57,7 @@ Puis cloner ce référentiel dans docker:
 ``` git clone https://github.com/vava408/docker-sae203.git ```
 
 Puis crée une image une images du DockerFile : 
-```docker build -t zinder 
-```
+```docker build -t zinder```
 
 Puis lancer le docker avec la commande : 
 ```docker run --name zinder-server -d -p 9043:9043 zinder```
