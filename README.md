@@ -77,7 +77,9 @@ Le résultat attendu est :
 002b46c927d3   zinder                "java Server"            57 minutes ago       Up 57 minutes       80/tcp, 0.0.0.0:9043->9043/tcp                   zinder-server
 ```
 
-Pour finir, lancez le client sur votre machine avec les commandes suivantes :  
+Pour finir, lancez le client sur votre machine avec les commandes suivantes
+Attention : Nous ne pouvons pas executer notre programme client dans notre docker, il vous faudra donc
+lancer votre programme java dans le shell classique.  
 ```
 javac *.java
 ```
