@@ -67,7 +67,8 @@ docker build -t zinder
 
 Puis lancer le docker avec la commande : 
 ```plaintext
-docker run --name zinder-server -d -p 9043:9043 zinder```
+docker run --name zinder-server -d -p 9043:9043 zinder
+```
 
 docker run permet de lancer le docker avec l'image que l'on creer précédemment, puis --name, 
 permet l'initialisation d'un nom pour notre docker.
