@@ -49,18 +49,25 @@ Zinder/
 ---
 # Explication
 Commencez par vous connecter à Docker avec :  
-``` ssh identifiant@di-docker ```
+```plaintext
+ssh identifiant@di-docker
+```
 
 ( cette commande stipule que vous êtes connecté au réseau de l'IUT )
 
 Puis cloner ce référentiel dans docker: 
-``` git clone https://github.com/vava408/docker-sae203.git ```
+```plaintext
+git clone https://github.com/vava408/docker-sae203.git
+ ```
 
 Puis crée une image une images du DockerFile : 
-```docker build -t zinder```
+```
+docker build -t zinder
+```
 
 Puis lancer le docker avec la commande : 
-```docker run --name zinder-server -d -p 9043:9043 zinder```
+```plaintext
+docker run --name zinder-server -d -p 9043:9043 zinder```
 
 docker run permet de lancer le docker avec l'image que l'on creer précédemment, puis --name, 
 permet l'initialisation d'un nom pour notre docker.
@@ -68,7 +75,7 @@ permet l'initialisation d'un nom pour notre docker.
 ( dans notre cas, le port 9043 ) 
 
 Ensuite, assurez-vous que le conteneur est bien en fonctionnement avec la commande :  
-```
+```plaintext
 docker ps
 ```
 
