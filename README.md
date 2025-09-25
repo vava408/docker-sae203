@@ -106,15 +106,18 @@ Si vous souhaitez supprimer le conteneur, utilisez la commande suivante :
 docker rm b8f8f406b03c
 ```
  
+## 👥 Contributeurs
+
 <a href="https://github.com/vava408">
-  <img src="https://avatars.githubusercontent.com/u/ID_VAVA408?v=4" width="50" height="50" style="border-radius:50%;" alt="vava408"/>
+  <img src="https://avatars.githubusercontent.com/u/171566515?v=4" width="50" height="50" style="border-radius:50%;" alt="vava408"/>
 </a>
 <a href="https://github.com/Lutteur">
-  <img src="https://avatars.githubusercontent.com/u/ID_Lutteur?v=4" width="50" height="50" style="border-radius:50%;" alt="vava408"/>
+  <img src="https://avatars.githubusercontent.com/u/186280929?v=4" width="50" height="50" style="border-radius:50%;" alt="Lutteur"/>
 </a>
 <a href="https://github.com/AudricHarris">
-  <img src="https://avatars.githubusercontent.com/u/ID_AudricHarris?v=4" width="50" height="50" style="border-radius:50%;" alt="vava408"/>
+  <img src="https://avatars.githubusercontent.com/u/186280812?v=4" width="50" height="50" style="border-radius:50%;" alt="AudricHarris"/>
 </a>
 <a href="https://github.com/Patate276">
-  <img src="https://avatars.githubusercontent.com/u/ID_Patate276?v=4" width="50" height="50" style="border-radius:50%;" alt="vava408"/>
+  <img src="https://avatars.githubusercontent.com/u/186280778?v=4" width="50" height="50" style="border-radius:50%;" alt="Patate276"/>
 </a>
+
